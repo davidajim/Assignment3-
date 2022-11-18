@@ -1,0 +1,52 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+<!-- Main Content -->
+<main>
+<div class="container">
+    <div class = "row">
+        <div class = "col-md-offset-3 col-md-10">
+            <h1><%= title%></h1>
+            <a href="/nba-list/add" class="btn btn-primary" role="button">
+                <i class ="fas fa-plus-circle"></i> Add a Game </a>
+            <br>
+            <br>
+    <table class= "table table-bordered table-striped table-hover">
+    <tr>
+        <th class= "text-center col-2">Name</th>
+        <th class= "text-center col-1">Points</th>
+        <th class= "text-center col-2">Date</th>
+        <th class= "text-center col-2">Team</th>
+        <th class= "text-center col-1">Against</th>
+        <th class= "text-center col-1"></th>
+        <th class= "text-center col-1"></th>
+
+    </tr>
+    <!--repreat the template-->
+
+    <% for(let count=0; count<NBAlist.length; count++) { %>
+        <tr>
+            <td class="text-center col-2"><%= NBAlist[count].name %></td>
+            <td class= "text-center col-1"><%= NBAlist[count].Points %></td>
+            <td class= "text-center col-2"><%= NBAlist[count].date %></td>
+            <td class= "text-center col-2"><%= NBAlist[count].team %></td>
+            <td class= "text-center col-1"><%= NBAlist[count].against %></td>
+            <td class= "text-center col-1">
+                <a href= "/nba-list/edit/<%= NBAlist[count]._id %>"
+                    class="btn btn-primary">
+                    <i class="fas fa-pencil-alt"></i> Edit </a>
+            </td>
+            <td class= "text-center col-1">
+                <a href= "/nba-list/delete/<%= NBAlist[count]._id %>"
+                    class="btn btn-danger">
+                    <i class="fas fa-trash-alt"></i> Delete </a>
+            </td>
+        </tr>
+
+    <% } %>
+    </table>
+</div>
+</div>
+</div>
+</main>
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>
