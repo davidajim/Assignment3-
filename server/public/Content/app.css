@@ -1,10 +1,17 @@
-main{
-    
+#edit{
+    background-color: aliceblue;
+}
+#add{
+    background-image: url(./Assets/images/lebron.jpg);
+}
+
+#list{
+    background-color: lightcyan;
 }
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("./Assets/images/1781240.jpg");
+    background-image: url(./Assets/images/1781240.jpg);
 }
 
   
