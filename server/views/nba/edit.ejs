@@ -1,0 +1,69 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+<!-- content for edit page goes here-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="post">
+
+                <div class=form-group>
+                    <label for="nameTextField">Name
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter Player's Name"
+                    name="name" 
+                    value="<%= nba.name%>"
+                    required>
+                </div>
+
+                <div class=form-group>
+                    <label for="pointsTextField">Points
+                    <input type="text" class="form-control"
+                    id="pointsTextField"
+                    placeholder="How Many Points"
+                    name="Points" 
+                    value="<%= nba.Points%>"
+                     required>
+                </div>
+                <div class=form-group>
+                    <label for="dateTextField">Date
+                    <input type="text" class="form-control"
+                    id="dateTextField"
+                    placeholder="The Date of the Game"
+                    name="date" 
+                    value="<%= nba.date%>"
+                    required>
+                </div>
+                <div class=form-group>
+                    <label for="teamTextField">Team
+                    <input type="text" class="form-control"
+                    id="teamTextField"
+                    placeholder="What Team he Played for"
+                    name="team" 
+                    value="<%= nba.team%>"
+                    required>
+                </div>
+                <div class=form-group>
+                    <label for="againstTextField">Against
+                    <input type="text" class="form-control"
+                    id="againstTextField"
+                    placeholder="Against Who"
+                    name="against" 
+                    value="<%= nba.against%>"
+                    required>
+                </div>
+                <br>
+                <button class="btn-btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit </button>
+
+                <a href="/nba-list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> Cancel </a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>
