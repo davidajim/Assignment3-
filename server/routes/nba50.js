@@ -27,7 +27,7 @@ router.post('/add',nbacontroller.processAddPage);
 /* Get route for displaying the Edit Operation*/
 router.get('/edit/:id',nbacontroller.displayEditPage);
 /* Post route for processing the Edit Operation*/
-router.post('/edit/:id',);
+router.post('/edit/:id',nbacontroller.ProcessEditPage);
 
 
 
