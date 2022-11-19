@@ -18,12 +18,8 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url('../Assets/images/1781240.jpg');
-    
-}
-body div.container#index{
     color: whitesmoke;
 }
-
   
   .container-fluid {
     overflow: hidden;
