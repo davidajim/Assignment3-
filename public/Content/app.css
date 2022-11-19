@@ -20,7 +20,7 @@ body {
     background-image: url('../Assets/images/1781240.jpg');
     
 }
-body h1#display-4{
+body div.container#index{
     color: whitesmoke;
 }
 
