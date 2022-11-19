@@ -9,8 +9,9 @@ div#add{
 }
 
 #list{
+    background-image: url('./Assets/images/1781240.jpg');
     background-color: blue;
-    /*background-image: url('./Assets/images/1781240.jpg');*/
+    
 }
 body {
     margin: 0;
