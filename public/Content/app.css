@@ -9,13 +9,14 @@ div#add{
 }
 
 #list{
-    background-image: url('./Assets/images/1781240.jpg');
+    
     background-color: blue;
     
 }
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./Assets/images/1781240.jpg');
     
 }
 
