@@ -60,7 +60,7 @@ module.exports.displayEditPage = (req,res,next)=>{
         }
         else
         {
-            document.body.style.backgroundImage = url('../Assets/images/108.jpg');
+            document.body.style.backgroundImage = "url('../Assets/images/108.jpg')";
             res.render('nba/edit', {title:'Edit Game',nba: nbaToEdit});
         }
     }) 
