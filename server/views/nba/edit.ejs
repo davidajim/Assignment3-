@@ -1,7 +1,8 @@
 <%- include ../partials/header.ejs %>
 <%- include ../partials/main_nav.ejs %>
 <!-- content for edit page goes here-->
-<div class="container">
+<link rel='stylesheet' href='/Content/app.css' />
+<div class="container" id="edit">
     <div class="row">
         <div class="col-md-offset-3 col-md-6">
             <h1><%= title %></h1>
@@ -48,7 +49,7 @@
                     <label for="againstTextField">Against
                     <input type="text" class="form-control"
                     id="againstTextField"
-                    placeholder="Who he played against"
+                    placeholder="Who He Played Against"
                     name="against" 
                     value="<%= nba.against%>"
                     required>
